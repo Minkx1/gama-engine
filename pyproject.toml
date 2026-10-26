@@ -1,0 +1,28 @@
+[project]
+name = "gama-engine"
+version = "0.1.0"
+description = "Gama is a simple 2D game engine build around Pygame."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Minkx1", email = "zakalata.mark@gmail.com" }]
+dependencies = ["pygame"]
+
+[project.urls]
+Homepage = "https://github.com/Minkx1/GamaEngine"
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "ruff", "pyinstaller", "commitizen"]
+
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.commitizen]
+version_scheme = "semver"
+version_provider = "pep621"
+tag_format = "v$version"
+major_version_zero = true
+update_changelog_on_bump = true

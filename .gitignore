@@ -1,0 +1,13 @@
+__pycache__/
+.venv/
+.env
+__build__/
+build/
+dist/
+.vscode/
+.idea/
+.ruff_cache/
+.pytest_cache/
+data/
+bin/
+*.egg-info
